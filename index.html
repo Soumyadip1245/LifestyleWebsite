@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+  
+    <script src="https://kit.fontawesome.com/a47252e966.js" crossorigin="anonymous"></script>
+    <title>LifeStyle</title>
+</head>
+<body>
+    
+    <header class="header">
+       <a href="#" target="_blank" class="logo">Soumyadip<span style="color:var(--helper-color)">LifeStyle</span></a>
+       <nav class="navbar">
+        <ul class="navbar-list">
+            
+            <li><a href="#category" class="navbarlink">Category</a></li>
+            <li><a href="#grocery" class="navbarlink">Grocery</a></li>
+            <li><a href="#sports" class="navbarlink">Sports</a></li>
+            <li><a href="#clothes" class="navbarlink">Clothes</a></li>
+            <li><a href="#gadgets" class="navbarlink">Gadgets</a></li>
+            <li><a  onclick="openNav()"class="btn navbar-btn">Cart</a></li>
+        </ul>
+       </nav>
+       <div class="mobile-navbar-btn">
+        <ion-icon name="menu"  class="mobile-nav-icon"></ion-icon>
+        <ion-icon name="close"  class="mobile-nav-icon"></ion-icon>
+    </div>
+    </header>
+    <main>
+        <section class="section section-hero">
+            <div class="container grid grid-two-column">
+                
+            <div class="hero-data">
+                <h1 class="primary-heading">Shop Whatever You Want</h1>
+                <p class="para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui numquam nostrum corrupti, eos culpa inventore ipsam nihil aliquam praesentium sapiente tempore soluta? Voluptas ex nisi eligendi ratione sed culpa doloremque reiciendis dolorum! Error cum nisi praesentium modi enim libero sint.
+                </p>
+                <a href="#category" class="btn" id="shop">Shop</a>
+            </div>
+            <div class="hero-image">
+                <img src="user-rating-feedback-customer-reviews-cartoon-web-icon-e-commerce-online-shopping-internet-buying-trust-metrics-top-rated-product_335657-2332-removebg-preview.png" class="image">
+            </div>
+            </div>
+        </section>
+    </main>
+    <section id="category">
+        <h1 class="h1browse">Browse Through</h1>
+        <h2 style="color: var(--helper-color)"class="h1browse">Our Category</h2>
+        <div class="categorycontainer">
+            <div class="categorycard" style="background-color: #e9f4e3">
+                <div class="category-image">
+                    <a href="#grocery"><img src="grocery.png"></a>
+                </div>
+            </div>
+            <div class="categorycard" style="background-color: #faeaea">
+                <div class="category-image">
+                    <a href="#clothes"><img src="clothes.png"></a>
+                </div>
+            </div>
+            <div class="categorycard"  style="background-color: #fef4ea">
+                <div class="category-image">
+                    <a href="#sports"><img src="sports.png"></a>
+                </div>
+            </div>
+            <div class="categorycard" style="background-color: #eeeef9">
+                <div class="category-image">
+                    <a href="#gadgets" ><img src="gadgets.png"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="mySidenav_sc" class="sidenav" style="display: none;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+           <div class="cart">
+            <div class="cart-title">Your Cart</div>
+            <hr style="margin-top: 2px">
+            <div class="cart-content">
+                <!-- <div class="cart-box">
+                <img src="bread.png" class="cart-img">
+                    <div class="detail-box">
+                        <div class="cart-product-title">Bread</div>
+                        <div class="cart-price">$ 40</div>
+                        <input type="number" value="1" class="cart-quantity">
+                    </div>
+                    <i style="color: red" class="fa-solid fa-trash cart-remove"></i>
+                </div> -->
+            </div>
+            
+            <div class="total">
+                
+                <div class="total-title">Total: &nbsp;</div>
+                <div class="total-price">$ 0</div>
+            </div>
+            <button type="button" class="btn-buy">Buy</button>
+           </div>
+      </div>
+      <a onclick="openNav()" class="float">
+        <i style="
+        position: absolute;
+        top: 1.8rem;
+        left: 1.2rem;
+        font-size: 2.8rem;
+    "class="fa-solid fa-cart-shopping"></i>
+        </a>
+    <section id="grocery">
+        
+        
+        <h1 class="h1browse">Fresh Farm Picked Beverages </h1>
+        <h2 style="color: var(--helper-color)"class="h1browse">Grocery</h2>
+
+        <section id="grocerybanner" class="section-m1">
+            <!-- <h4>Best Clothes</h4>
+            <h2>Up to <span>70% Off</span> - All Groceries Item At Your Door</h2> -->
+            <!-- <button >Explore More</button> -->
+            </section>
+        <div class="productscontainer">
+            
+            <div class="card">
+                <div class="imgBx">
+                    <img src="bread.png" alt="nike-air-shoe"  >
+                </div>
+    
+                <div class="contentBx">
+                    <img class="product-img" src="bread.png" alt="nike-air-shoe"  >
+
+                    <h2 class="product-title">Bread</h2>
+                    
+                    <div class="size">
+                        <h3>Weight :</h3>
+                        <span>7 gm</span>
+                    </div>
+    
+                    <div class="color">
+                        <h3>Price :</h3>
+                        <span class="price"> 50</span>
+                    </div>
+                    <a  class="add-cart">Cart</a>
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="apple.png" alt="nike-air-shoe"  >
+                </div>
+    
+                <div class="contentBx">
+                    <img class="product-img" src="apple.png" alt="nike-air-shoe"  >
+
+                    <h2 class="product-title">Apple</h2>
+                    
+                    <div class="size">
+                        <h3>Weight :</h3>
+                        <span>1 kg</span>
+                    </div>
+    
+                    <div class="color">
+                        <h3>Price :</h3>
+                        <span class="price"> 120</span>
+                    </div>
+                    <a  class="add-cart">Cart</a>
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="rice.png" alt="nike-air-shoe"  >
+                </div>
+    
+                <div class="contentBx">
+                    <img class="product-img" src="rice.png" alt="nike-air-shoe"  >
+
+                    <h2 class="product-title">Rice</h2>
+                    
+                    <div class="size">
+                        <h3>Weight :</h3>
+                        <span>2 Kg</span>
+                    </div>
+    
+                    <div class="color">
+                        <h3>Price :</h3>
+                        <span class="price"> 250</span>
+                    </div>
+                    <a  class="add-cart">Cart</a>
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="beans.png" alt="nike-air-shoe"  >
+                </div>
+    
+                <div class="contentBx">
+                    <img class="product-img" src="beans.png" alt="nike-air-shoe"  >
+
+                    <h2 class="product-title">Beans</h2>
+                    
+                    <div class="size">
+                        <h3>Weight :</h3>
+                        <span>200 gm</span>
+                    </div>
+    
+                    <div class="color">
+                        <h3>Price :</h3>
+                        <span class="price"> 25</span>
+                    </div>
+                    <a  class="add-cart">Cart</a>
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="flour.png" alt="nike-air-shoe"  >
+                </div>
+    
+                <div class="contentBx">
+                    <img class="product-img" src="flour.png" alt="nike-air-shoe"  >
+
+                    <h2 class="product-title">Flour</h2>
+                    
+                    <div class="size">
+                        <h3>Weight :</h3>
+                        <span>1.5 kg</span>
+                    </div>
+    
+                    <div class="color">
+                        <h3>Price :</h3>
+                        <span class="price"> 500 gm</span>
+                    </div>
+                    <a  class="add-cart">Cart</a>
+                </div>
+    
+            </div>
+          
+            
+
+        </div>
+    </section>
+    <section id="sports" >
+        
+        
+        <h1 class="h1browse">Best Quality Sport Product With Water Absorbent Material</h1>
+        <h2 style="color: var(--helper-color)"class="h1browse">Sports</h2>
+
+        <section id="sportbanner"   class="section-m1">
+            <!-- <h4>Best Clothes</h4>
+            <h2>Up to <span>70% Off</span> - All Groceries Item At Your Door</h2> -->
+            <!-- <button >Explore More</button> -->
+            </section>
+        <div class="productscontainer">
+            
+            <div class="card">
+                <div class="imgBx">
+                    <img src="skates.png" alt="nike-air-shoe"  >
+                </div>
+    
+                <div class="contentBx">
+                    <img class="product-img" src="skates.png" alt="nike-air-shoe"  >
+
+                    <h2 class="product-title">Skates</h2>
+                    
+                    <div class="size">
+                        <h3>Weight :</h3>
+                        <span>8 Kg</span>
+                    </div>
+    
+                    <div class="color">
+                        <h3>Price :</h3>
+                        <span class="price"> 2500</span>
+                    </div>
+                    <a  class="add-cart">Cart</a>
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="bat.png" alt="nike-air-shoe"  >
+                </div>
+    
+                <div class="contentBx">
+                    <img class="product-img" src="bat.png" alt="nike-air-shoe"  >
+
+                    <h2 class="product-title">Cricket Bat</h2>
+                    
+                    <div class="size">
+                        <h3>Weight :</h3>
+                        <span>2 Kg</span>
+                    </div>
+    
+                    <div class="color">
+                        <h3>Price :</h3>
+                        <span class="price"> 750</span>
+                    </div>
+                    <a  class="add-cart">Cart</a>
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="badminton.png" alt="nike-air-shoe"  >
+                </div>
+    
+                <div class="contentBx">
+                    <img class="product-img" src="badminton.png" alt="nike-air-shoe"  >
+
+                    <h2 class="product-title">Badminton</h2>
+                    
+                    <div class="size">
+                        <h3>Weight :</h3>
+                        <span>200 gm</span>
+                    </div>
+    
+                    <div class="color">
+                        <h3>Price :</h3>
+                        <span class="price"> 800</span>
+                    </div>
+                    <a  class="add-cart">Cart</a>
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="Gloves.png" alt="nike-air-shoe"  >
+                </div>
+    
+                <div class="contentBx">
+                    <img class="product-img" src="Gloves.png" alt="nike-air-shoe"  >
+
+                    <h2 class="product-title">Gloves</h2>
+                    
+                    <div class="size">
+                        <h3>Weight :</h3>
+                        <span>150 gm</span>
+                    </div>
+    
+                    <div class="color">
+                        <h3>Price :</h3>
+                        <span class="price"> 500</span>
+                    </div>
+                    <a  class="add-cart">Cart</a>
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="cycle.png" alt="nike-air-shoe"  >
+                </div>
+    
+                <div class="contentBx">
+                    <img class="product-img" src="cycle.png" alt="nike-air-shoe"  >
+
+                    <h2 class="product-title">Cycle</h2>
+                    
+                    <div class="size">
+                        <h3>Weight :</h3>
+                        <span>15 Kg</span>
+                    </div>
+    
+                    <div class="color">
+                        <h3>Price :</h3>
+                        <span class="price"> 12000</span>
+                    </div>
+                    <a  class="add-cart">Cart</a>
+                </div>
+    
+            </div>
+
+            
+
+        </div>
+    </section>
+    <section id="clothes" >
+        
+        
+        <h1 class="h1browse">Clothes Available For All Men And Women </h1>
+        <h2 style="color: var(--helper-color)"class="h1browse">Clothes</h2>
+
+        <section id="banner" class="section-m1">
+            <h4>Best Clothes</h4>
+            <h2>Up to <span>70% Off</span> - All Clothes Delivered At Your Door</h2>
+            
+            </section>
+        <div class="productscontainer">
+            
+            <div class="card">
+                <div class="imgBx">
+                    <img src="skirt.png" alt="nike-air-shoe"  >
+                </div>
+    
+                <div class="contentBx">
+                    <img class="product-img" src="skirt.png" alt="nike-air-shoe"  >
+
+                    <h2 class="product-title">Skirt</h2>
+                    
+                    <div class="size">
+                        <h3>Weight :</h3>
+                        <span>100 gm</span>
+                    </div>
+    
+                    <div class="color">
+                        <h3>Price :</h3>
+                        <span class="price"> 1500</span>
+                    </div>
+                    <a  class="add-cart">Cart</a>
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="shirt.png" alt="nike-air-shoe"  >
+                </div>
+    
+                <div class="contentBx">
+                    <img class="product-img" src="shirt.png" alt="nike-air-shoe"  >
+
+                    <h2 class="product-title">Shirt</h2>
+                    
+                    <div class="size">
+                        <h3>Weight :</h3>
+                        <span>200 gm</span>
+                    </div>
+    
+                    <div class="color">
+                        <h3>Price :</h3>
+                        <span class="price"> 2000</span>
+                    </div>
+                    <a  class="add-cart">Cart</a>
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="tshirt.png" alt="nike-air-shoe"  >
+                </div>
+    
+                <div class="contentBx">
+                    <img class="product-img" src="tshirt.png" alt="nike-air-shoe"  >
+
+                    <h2 class="product-title">T-Shirt</h2>
+                    
+                    <div class="size">
+                        <h3>Weight :</h3>
+                        <span>82 gm</span>
+                    </div>
+    
+                    <div class="color">
+                        <h3>Price :</h3>
+                        <span class="price"> 800</span>
+                    </div>
+                    <a  class="add-cart">Cart</a>
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="jeans.png" alt="nike-air-shoe"  >
+                </div>
+    
+                <div class="contentBx">
+                    <img class="product-img" src="jeans.png" alt="nike-air-shoe"  >
+
+                    <h2 class="product-title">Jeans</h2>
+                    
+                    <div class="size">
+                        <h3>Weight :</h3>
+                        <span>250 gm</span>
+                    </div>
+    
+                    <div class="color">
+                        <h3>Price :</h3>
+                        <span class="price"> 2500</span>
+                    </div>
+                    <a  class="add-cart">Cart</a>
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="suit.png" alt="nike-air-shoe"  >
+                </div>
+    
+                <div class="contentBx">
+                    <img class="product-img" src="suit.png" alt="nike-air-shoe"  >
+
+                    <h2 class="product-title">Suit</h2>
+                    
+                    <div class="size">
+                        <h3>Weight :</h3>
+                        <span>1 Kg</span>
+                    </div>
+    
+                    <div class="color">
+                        <h3>Price :</h3>
+                        <span class="price"> 10000</span>
+                    </div>
+                    <a  class="add-cart">Cart</a>
+                </div>
+    
+            </div>
+           
+        </div>
+    </section>
+    <section id="gadgets" >
+        
+        
+        <h1 class="h1browse">Best Electronic Item At One Place</h1>
+        <h2 style="color: var(--helper-color)"class="h1browse">Electronic</h2>
+
+        <section id="gadgetbanner" class="section-m1">
+            <!-- <h4>Best Clothes</h4>
+            <h2>Up to <span>70% Off</span> - All Groceries Item At Your Door</h2> -->
+            
+            </section>
+        <div class="productscontainer">
+            
+            <div class="card">
+                <div class="imgBx">
+                    <img src="mobile.png" alt="nike-air-shoe"  >
+                </div>
+    
+                <div class="contentBx">
+                    <img class="product-img" src="mobile.png" alt="nike-air-shoe"  >
+
+                    <h2 class="product-title">Mobile</h2>
+                    
+                    <div class="size">
+                        <h3>Weight :</h3>
+                        <span>282 gm</span>
+                    </div>
+    
+                    <div class="color">
+                        <h3>Price :</h3>
+                        <span class="price"> 25000</span>
+                    </div>
+                    <a  class="add-cart">Cart</a>
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="laptop.png" alt="nike-air-shoe"  >
+                </div>
+    
+                <div class="contentBx">
+                    <img class="product-img" src="laptop.png" alt="nike-air-shoe"  >
+
+                    <h2 class="product-title">Laptop</h2>
+                    
+                    <div class="size">
+                        <h3>Weight :</h3>
+                        <span>2.5 Kg</span>
+                    </div>
+    
+                    <div class="color">
+                        <h3>Price :</h3>
+                        <span class="price"> 120000</span>
+                    </div>
+                    <a  class="add-cart">Cart</a>
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="WashingMachine.png" alt="nike-air-shoe"  >
+                </div>
+    
+                <div class="contentBx">
+                    <img class="product-img" src="WashingMachine.png" alt="nike-air-shoe"  >
+
+                    <h2 class="product-title">Washing Machine</h2>
+                    
+                    <div class="size">
+                        <h3>Weight :</h3>
+                        <span>8 Kg</span>
+                    </div>
+    
+                    <div class="color">
+                        <h3>Price :</h3>
+                        <span class="price"> 20000</span>
+                    </div>
+                    <a  class="add-cart">Cart</a>
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="headphones.png" alt="nike-air-shoe"  >
+                </div>
+    
+                <div class="contentBx">
+                    <img class="product-img" src="headphones.png" alt="nike-air-shoe"  >
+
+                    <h2 class="product-title">Headphones</h2>
+                    
+                    <div class="size">
+                        <h3>Weight :</h3>
+                        <span>500 gm</span>
+                    </div>
+    
+                    <div class="color">
+                        <h3>Price :</h3>
+                        <span class="price"> 1500</span>
+                    </div>
+                    <a  class="add-cart">Cart</a>
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="Refrigerator.png" alt="nike-air-shoe"  >
+                </div>
+    
+                <div class="contentBx">
+                    <img class="product-img" src="Refrigerator.png" alt="nike-air-shoe"  >
+
+                    <h2 class="product-title">Refrigerator</h2>
+                    
+                    <div class="size">
+                        <h3>Weight :</h3>
+                        <span>10 Kg</span>
+                    </div>
+    
+                    <div class="color">
+                        <h3>Price :</h3>
+                        <span class="price"> 15000</span>
+                    </div>
+                    <a  class="add-cart">Cart</a>
+                </div>
+    
+            </div>
+            
+            
+
+        </div>
+    </section>
+    
+    <section>
+        <footer>
+          <div class="footermain">
+            <h2>Soumyadip Das</h2>
+            <ul>
+              <li><a href="#">Code Made By Soumyadip Das</a></li>
+              
+            </ul>
+            <div class="footeraccounts">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+          </div>
+          <hr>
+          <p class="footercopyright">All Right Reserved &copy; 2022</p>
+         </footer>
+        </section>  
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
