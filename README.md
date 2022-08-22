@@ -1,5 +1,7 @@
 # LifestyleWebsite
-This is my Final Future Ready Talent Project <a href="https://yellow-plant-0dc7bea10.1.azurestaticapps.net/">Azure Link</a>
+This is my Final Future Ready Talent Project 
+<a href="https://yellow-plant-0dc7bea10.1.azurestaticapps.net/">Azure Link</a> <a href="https://soumyadip1245.github.io/LifestyleWebsite/">Github Link</a>
+
 
 # Azure Link
 https://yellow-plant-0dc7bea10.1.azurestaticapps.net/
