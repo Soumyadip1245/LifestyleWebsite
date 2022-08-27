@@ -17,7 +17,7 @@ else{
   ready();
 }
 function openNav() {
-  document.getElementById("mySidenav_sc").style.width = "500px";
+  document.getElementById("mySidenav_sc").style.width = "88%";
   document.getElementById("mySidenav_sc").style.display = "block";
 }
 
@@ -64,6 +64,17 @@ function addCartClicked(event){
   var price = shopProducts.getElementsByClassName('price')[0].innerText;
   var productImg = shopProducts.getElementsByClassName('product-img')[0].src;
   addProductToCart(title, price, productImg);
+  Swal.fire({
+    position: 'top',
+    icon: 'success',
+    
+    // html: true,
+    title: 'Items Added In Cart',
+    showConfirmButton: false,
+    timer: 1500,
+    customClass: 'swal-wide'
+    
+  })
   updatetotal();
 }
 function addProductToCart(title, price, productImg){
@@ -73,7 +84,13 @@ function addProductToCart(title, price, productImg){
   var cartItemsNames = cartItems.getElementsByClassName("cart-product-title");
   for(var i =0;i<cartItemsNames.length;i++){
     if(cartItemsNames[i].innerText == title){
-      alert("Cart");
+      Swal.fire({
+        position: 'top-end',
+        icon: 'error',
+        title: 'Item Is Aleardy In Cart',
+        showConfirmButton: false,
+        timer: 1500
+      })
       return;
     }
   }
@@ -114,7 +131,37 @@ var cartBoxContent = `
   
 }
 function buyButtonClicked(){
-  alert("Order Placed")
+  Swal.fire({
+    title: 'Your Order Has Been Placed Successfully',
+    imageUrl: 'https://cdn.dribbble.com/users/143127/screenshots/2475556/media/3d00af4a31c2902aea8bc05b0e1dbdde.gif',
+    imageWidth: 400,
+    imageHeight: 250,
+    imageAlt: 'Custom image',
+    
+    customClass: 'swal-buywide',
+    
+    showConfirmButton: false,
+    // timer: 4000,
+    
+    customClass: 'swal-buywide',
+    
+    showConfirmButton: false,
+    html: 'I will close in <b></b> milliseconds.',
+    timer: 4000,
+    timerProgressBar: true,
+    didOpen: () => {
+      Swal.showLoading()
+      const b = Swal.getHtmlContainer().querySelector('b')
+      timerInterval = setInterval(() => {
+        b.textContent = Swal.getTimerLeft()
+      }, 100)
+    },
+    willClose: () => {
+      clearInterval(timerInterval)
+    }
+  
+  
+  })
   var cartContent = document.getElementsByClassName('cart-content')[0]
   while(cartContent.hasChildNodes()){
     cartContent.removeChild(cartContent.firstChild)
