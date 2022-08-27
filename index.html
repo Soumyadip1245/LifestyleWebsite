@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-  
     <script src="https://kit.fontawesome.com/a47252e966.js" crossorigin="anonymous"></script>
     <title>LifeStyle</title>
 </head>
@@ -73,7 +73,7 @@
             </div>
         </div>
     </section>
-    <div id="mySidenav_sc" class="sidenav" style="display: none;">
+    <div id="mySidenav_sc" class="sidenav" style="display: none">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
            <div class="cart">
             <div class="cart-title">Your Cart</div>
@@ -95,16 +95,11 @@
                 <div class="total-title">Total: &nbsp;</div>
                 <div class="total-price">$ 0</div>
             </div>
-            <button type="button" class="btn-buy">Buy</button>
+            <button onclick="closeNav()" type="button" class="btn-buy">Buy</button>
            </div>
       </div>
       <a onclick="openNav()" class="float">
-        <i style="
-        position: absolute;
-        top: 1.8rem;
-        left: 1.2rem;
-        font-size: 2.8rem;
-    "class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
         </a>
     <section id="grocery">
         
@@ -294,7 +289,7 @@
                         <h3>Price :</h3>
                         <span class="price"> 750</span>
                     </div>
-                    <a  class="add-cart">Cart</a>
+                    <a class="add-cart">Cart</a>
                 </div>
     
             </div>
