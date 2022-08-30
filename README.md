@@ -13,10 +13,10 @@ Starting with the website name which is "SoumyadipLifeStyle". It is a platform w
 Bringing all the lifestyle related products like grocery, apparels, sports equipment, gadgets etc in one platform for easy accessibility and versatility. 
 # Snapshots
 <h4>Landing Page</h4>
-<img src="https://imgur.com/v46vBR0"/>
+<img src="https://i.imgur.com/v46vBR0.png"/>
 <h4>Category</h4>
-<img src="https://imgur.com/70MFeX5"/>
+<img src="https://i.imgur.com/70MFeX5.png"/>
 <h4>Products</h4>
-<img src="https://imgur.com/xFAmJ4c"/>
+<img src="https://i.imgur.com/xFAmJ4c.png"/>
 <h4>Cart Menu</h4>
-<img src="https://imgur.com/undefined"/>
+<img src="https://i.imgur.com/FZT7Rwh.png"/>
